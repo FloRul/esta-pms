@@ -3,16 +3,11 @@ module "template_index_table" {
 
   name     = "prompt-index-${var.environment}"
   hash_key = "id"
-  range_key = "version"
 
   attributes = [
     {
       name = "id"
-      type = "N"
-    },
-    {
-      name = "version"
       type = "S"
-    }
+    },
   ]
 }

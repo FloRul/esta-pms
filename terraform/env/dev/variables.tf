@@ -9,3 +9,9 @@ variable "project_name" {
   type        = string
   nullable    = false
 }
+
+variable "aws_region" {
+  description = "The AWS region to deploy to"
+  type        = string
+  nullable    = false
+}
